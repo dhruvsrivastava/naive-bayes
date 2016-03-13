@@ -69,7 +69,7 @@ def calculateProbability(x , mean , stdev):
 	power /= float(2 * stdev * stdev)
 	# print "power " , power
 	if power > 50:
-		return pow(1,-20)
+		return pow(10,-20)
 	den = long(math.exp(power))
 	den *= stdev * math.sqrt(2 * math.pi)
 	return 1 / den
